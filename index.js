@@ -9,7 +9,7 @@ emitter = new EventEmitter();
 emitter.setMaxListeners(Number.POSITIVE_INFINITY);
 
 console.clear();console.log(`${colors.rainbow(figlet.textSync('Dany-LF'))}\n${chalk.blue("=============================================")}\nConfig:\n${chalk.red("Logs Guilds Messages")}: ${chalk.blue(conf.logguildsmsg)}\n${chalk.red("Logs DMs")}: ${chalk.blue(conf.logdmsmsg)}\n${chalk.blue("=============================================")}\nPlease wait 3 seconds.`);
-setTimeout(login, 3000);function login(){msglogger.login(conf.token)}
+setTimeout(login, 3000);function login(){try{.login(conf.token)} catch {console.log(chalk.red("INVALID TOKEN!!"));}}
 
 msglogger.on('ready', () => {
 	//if(conf.logdmsmsg != true || conf.logdmsmsg != false) return;if(conf.logguildsmsg != "true" || conf.logguildsmsg != "false") return;
