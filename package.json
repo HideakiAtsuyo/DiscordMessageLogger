@@ -8,9 +8,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Dany-LF/DiscordMessageLogger"
+    "url": "https://github.com/HideakiAtsuyo/DiscordMessageLogger"
   },
-  "author": "Dany-LF",
+  "author": "HideakiAtsuyo",
   "license": "MIT",
   "dependencies": {
     "chalk": "^4.0.0",
